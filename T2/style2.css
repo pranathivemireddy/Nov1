@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d2b2a;
+}
+.animation{
+    height: 95px;
+    display: flex;
+    transform: rotate(180deg);
+}
+.animation span{
+    width: 40px;
+    margin: 0 2px;
+    animation:bar 2s infinite;
+}
+@keyframes bar {
+    0%,100%{
+        height: 150px;
+        background:black;
+    }
+    25%{
+        height:200px;
+        background:blue;
+    }
+    50%{
+        height: 40px;
+        background:red;
+    }
+    75%{
+        height:350px;
+        background:#dde813;
+    }
+}
+.animation span:nth-child(1){
+    animation-delay: 0.2s;
+}
+.animation span:nth-child(2){
+    animation-delay: 0.4s;
+}
+.animation span:nth-child(3){
+    animation-delay: 0.6s;
+}
+.animation span:nth-child(4){
+    animation-delay: 0.8s;
+}
+.animation span:nth-child(5){
+    animation-delay: 1s;
+}

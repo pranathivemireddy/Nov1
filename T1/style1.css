@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* gap:50px; */
+}
+.container{
+    width: 550px;
+    height: 500px;
+    border: 1px solid;
+    padding: 20px;
+}
+button{
+    font-size: 1rem;
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin: 150px;
+}
+button:hover{
+    cursor: pointer;
+}
+.translate:hover~img{
+    transform: translate(100px,-100px);
+    transition: all 2s;
+}
+.scale:hover~img{
+    transform: scale(2);
+    transition: all 2s;
+}
+.skew:hover~img{
+    transform: skew(30deg,30deg);
+    transition: all 2s;
+}
+.rotate:hover~img{
+    transform:rotate(1700deg);
+    transition: all 15s ease;
+}
+.skewrotate:hover~img{
+    background-color:pink;
+    transform:rotate(360deg) skewX(60deg);
+    transition: all 10s ease;
+}
+.translaterotate:hover~img{
+    background-color:pink;
+    transform:rotate(360deg) translate(100px,100px);
+    transition: all 10s ease;
+}
